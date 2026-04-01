@@ -1,0 +1,17 @@
+{
+  "name": "nature-ship",
+  "version": "1.0.0",
+  "description": "Fresh Juice Store - Nature Ship Website",
+  "main": "Project1.html",
+  "scripts": {
+    "start": "serve .",
+    "build": "echo 'Static site - no build step required'",
+    "dev": "serve . -l 3000"
+  },
+  "keywords": ["juice", "nature", "ecommerce", "static", "vercel"],
+  "author": "Ved Patel",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.2.1"
+  }
+}

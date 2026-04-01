@@ -99,17 +99,17 @@ document.querySelectorAll("button").forEach(btn => {
   });
 });
   const images = [
-      "images/Backkground 3.jpg",
+      "/images/Backkground 3.jpg",
    
-      "images/Screenshot_20260331_174610_Chrome.jpg",
+      "/images/Screenshot_20260331_174610_Chrome.jpg",
    
-    "images/katherine-chase-0DtoVEDaJbs-unsplash.jpg",
-    "images/background 7.jpg",
+    "/images/katherine-chase-0DtoVEDaJbs-unsplash.jpg",
+    "/images/background 7.jpg",
      
-     "images/dhanya-purohit-KyAacW3enww-unsplash.jpg",
-     "images/background 2.jpg",
-    "images/dan-gold-cUaXzFXVKkA-unsplash.jpg",
-     "images/background 6.jpg"
+     "/images/dhanya-purohit-KyAacW3enww-unsplash.jpg",
+     "/images/background 2.jpg",
+    "/images/dan-gold-cUaXzFXVKkA-unsplash.jpg",
+     "/images/background 6.jpg"
     
   ];
 
