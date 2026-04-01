@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nature Ship | Fresh Juice Store</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="projectcss.css" />
+
+  
+</head>
+<body>
+
+  <div class="bg-shape shape1"></div>
+  <div class="bg-shape shape2"></div>
+
+  <header class="navbar">
+    <div class="logo"><span>Nature</span>Ship 🌿</div>
+
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#categories">Categories</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#shop">Shop</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="projectloginpage.html" class="nav-login">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="overlay"></div>
+      <div class="hero-content">
+        <p class="tag">Fresh • Healthy • Natural</p>
+        <h1>Fresh From <br><span>Nature</span></h1>
+        <p>Experience the real taste of nature with every sip.</p>
+        <div class="hero-buttons">
+          <a href="#shop" class="btn">Shop Now</a>
+          <a href="projectloginpage.html" class="btn btn-outline">Login</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="categories" class="section">
+      <div class="section-title">
+        <p>Our Collection</p>
+        <h2>Popular Categories</h2>
+      </div>
+
+      <div class="card-container">
+        <div class="card">
+          <img src="images/WhatsApp Image 2026-03-31 at 8.23.32 PM.jpeg">
+          <h3>Cocount juice</h3>
+          <p>Enjoy rich mango flavor crafted with fresh ingredients and natural sweetness.</p>
+          <div class="card-actions">
+            <button onclick="addToCart('Mango Juice', 59)">Add to Cart</button>
+            <button class="buy" onclick="orderNow('Mango Juice', 59)">Buy Now</button>
+          </div>
+        </div>
+
+        <div class="card">
+            <img src="images/IMG-20260331-WA0014.jpg">
+          <h3>Orange Juice</h3>
+          <p>Healthy fruit juice  with creamy texture and rich taste.</p>
+          <div class="card-actions">
+            <button onclick="addToCart('Fruit Shake', 59)">Add to Cart</button>
+            <button class="buy" onclick="orderNow('Fruit Shake', 59)">Buy Now</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/IMG-20260331-WA0018.jpg">
+          <h3>Graphs Juice</h3>
+          <p>Natural mixed fruit juice packed with freshness.</p>
+          <div class="card-actions">
+            <button onclick="addToCart('Mixed Juice', 59)">Add to Cart</button>
+            <button class="buy" onclick="orderNow('Mixed Juice', 59)">Buy Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about-section">
+      <div class="about-box">
+        
+        <p>About Us</p>
+        <h2>Why Choose Nature Ship?</h2>
+        <p>
+          Nature Ship is your trusted destination for fresh and natural fruit drinks.
+           We are committed to delivering high-quality beverages made with premium ingredients and no preservatives.
+            Our mission is to combine health, taste, and convenience in one place, providing customers with a simple, fast, and enjoyable shopping experience.
+           At Nature Ship, every sip reflects freshness, quality, and care.
+        </p>
+       
+  <header class="header">
+  <h1>Our Story</h1>
+  <p>Built for nature lovers 🌿</p>
+</header>
+
+<section class="about-container">
+
+  <div class="about-text">
+    <h2>Bridging Nature and People</h2>
+    <p>
+      Nature Ship was created to connect people with nature-friendly products.
+      Our goal is to promote eco-friendly living and sustainable choices.
+    </p>
+  </div>
+
+  <div class="highlight-box">
+    🌱 Nature Starts Here
+  </div>
+
+</section>
+
+<section class="team">
+  <h2>Meet Our Team</h2>
+
+  <div class="team-cards">
+
+    <div class="card">
+      <h3>Ved Patel</h3>
+      <p>Frontend Developer</p>
+    </div>
+
+
+  </div>
+</section>
+      </div>
+    </section>
+
+    <section id="shop" class="section">
+      <div class="section-title">
+        <p>Shop Now</p>
+        <h2>Best Selling Products</h2>
+      </div>
+
+      <div class="products">
+        <div class="product">
+          <img src="images/file_00000000d0147208b34232dd6c5d69de.png" alt="Assorted Pack">
+          <h3>Assorted Pack</h3>
+          <span>₹199</span>
+          <div class="product-actions">
+            <button onclick="addToCart('Assorted Pack', 199)">Add to Cart</button>
+            <button class="buy" onclick="orderNow('Assorted Pack', 199)">Buy Now</button>
+          </div>
+        </div>
+
+        <div class="product">
+          <img src="images/IMG-20260331-WA0025.jpg" alt="Mango Juice">
+          <h3>Mango juice</h3>
+          <span>₹149</span>
+          <div class="product-actions">
+            <button onclick="addToCart('Mango Juice', 149)">Add to Cart</button>
+            <button class="buy" onclick="orderNow('Mango Juice', 149)">Buy Now</button>
+          </div>
+        </div>
+          <div class="products">
+        <div class="product">
+          <img src="images/IMG-20260331-WA0022.jpg" >
+          <h3>Apple Juice</h3>
+          <span>₹69</span>
+          <div class="product-actions">
+            <button onclick="addToCart('Assorted Pack', 69)">Add to Cart</button>
+            <button class="buy" onclick="orderNow('Assorted Pack', 69)">Buy Now</button>
+          </div>
+        </div>
+
+          <div class="products">
+        <div class="product">
+          <img src="images/IMG-20260331-WA0023.jpg" >
+          <h3>Dragon Friut Juice</h3>
+          <span>₹99</span>
+          <div class="product-actions">
+            <button onclick="addToCart('Assorted Pack', 99)">Add to Cart</button>
+            <button class="buy" onclick="orderNow('Assorted Pack', 99)">Buy Now</button>
+          </div>
+        </div>
+
+          <div class="product">
+          <img src="images/IMG-20260331-WA0019.jpg" alt="Lemon Juice">
+          <h3>Lemon juice</h3>
+          <span>₹59</span>
+          <div class="product-actions">
+            <button onclick="addToCart('Mango Juice', 59)">Add to Cart</button>
+            <button class="buy" onclick="orderNow('Mango Juice', 59)">Buy Now</button>
+          </div>
+        </div>
+
+        <div class="product">
+          <img src="images/IMG-20260331-WA0024.jpg" alt="Banana Shake">
+          <h3>Cocount Juice</h3>
+          <h3>Pack Of 4</h3>
+          <span>₹149</span>
+          <div class="product-actions">
+            <button onclick="addToCart('Cocount Juice', 149)">Add to Cart</button>
+            <button class="buy" onclick="orderNow('Cocount Juice', 149)">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+     <div class="cart-box">
+        <h3>Your Cart 🛒</h3>
+        <ul id="cart-items"></ul>
+        <p id="cart-total">Total: ₹0</p>
+        <div class="cart-buttons">
+          <button class="checkout-btn" onclick="checkoutOnWhatsApp()">Order on WhatsApp</button>
+          <button class="clear-btn" onclick="clearCart()">Clear Cart</button>
+        </div>
+      </div>
+  
+    </section>
+
+    <section id="contact" class="section">
+      <div class="section-title">
+        <p>Get in Touch</p>
+        <h2>Contact Us</h2>
+      </div>
+
+      <div class="contact-box">
+        <section class="contact-container">
+
+  <div class="contact-info">
+    <h2>Contact Information</h2>
+
+    <p><strong>📍 Location:</strong><br>
+      Anand, Gujarat, India
+    </p>
+
+    <p><strong>📞 Phone:</strong><br>
+      +91 6355059293
+    </p>
+
+    <p><strong>📧 Email:</strong><br>
+      📧support@natureship.com
+      <br>
+      📧 12502080701060@mbit.edu.in
+    </p>
+  </div>
+
+  <div class="contact-form">
+    <h2>Send Us a Message</h2>
+
+    <form>
+      <input type="text" placeholder="Your Name" required><br>
+
+      <input type="email" placeholder="Email Address" required><br>
+
+      <input type="text" placeholder="Subject"><br>
+      <textarea placeholder="Your Message"></textarea><br>
+    
+    </form>
+  </div>
+
+</section>
+        
+        <a class="contact-btn" href="https://wa.me/916355059293" target="_blank">Chat on WhatsApp 🚀</a>
+      </div>
+    </section>
+  </main>
+
+  <a href="https://wa.me/916355059293" class="whatsapp-float" target="_blank">💬</a>
+
+  <script src="project.js"></script>
+<script>
+  const images = [
+    "images/Backkground 3.jpg",
+   
+      "images/Screenshot_20260331_174610_Chrome.jpg",
+   
+    "images/katherine-chase-0DtoVEDaJbs-unsplash.jpg",
+    "images/background 7.jpg",
+     
+     "images/dhanya-purohit-KyAacW3enww-unsplash.jpg",
+     "images/background 2.jpg",
+    "images/dan-gold-cUaXzFXVKkA-unsplash.jpg",
+     "images/background 6.jpg"
+    
+  
+      ];
+
+  let index = 0;
+  const hero = document.querySelector(".hero");
+
+  function changeBackground() {
+    hero.style.opacity = 0;
+
+    setTimeout(() => {
+      // Corrected the path syntax here
+      hero.style.backgroundImage = "url('" + images[index] + "')";
+      hero.style.opacity = 1;
+      index = (index + 1) % images.length;
+    }, 500);
+  }
+
+  // Initial call
+  changeBackground();
+
+  // Change every 3 seconds for a smoother effect
+  setInterval(changeBackground, 3000);
+
+</script>
+
+</body>
+<footer class="footer">
+  <p>© 2026 Nature Ship </p>
+</footer>
+
+</html>

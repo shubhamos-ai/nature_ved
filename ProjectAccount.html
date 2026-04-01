@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NatureShip - Profile</title>
+  <style>
+    :root { --dark-bg: #121d18; --brand-green: #3be477; --white: #ffffff; --card: #1a2822; --border: #2d4138; }
+    body { font-family: sans-serif; background: var(--dark-bg); color: var(--white); margin: 0; }
+    .navbar { padding: 1rem 5%; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; }
+    .logo { font-size: 1.5rem; font-weight: bold; text-decoration: none; }
+    .logo .g { color: var(--brand-green); } .logo .w { color: var(--white); }
+    .profile-container { max-width: 600px; margin: 50px auto; background: var(--card); padding: 30px; border-radius: 15px; border: 1px solid var(--border); text-align: center; }
+    .avatar { width: 100px; height: 100px; border-radius: 50%; border: 3px solid var(--brand-green); margin-bottom: 20px; }
+    .logout-btn { color: #ff4d4d; border: 1px solid #ff4d4d; padding: 5px 15px; border-radius: 5px; background: none; cursor: pointer; }
+  
+  body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+
+  /* Background Image */
+  background: url('images/overhead-view-juicy-healthy-fruits-black-background.jpg') no-repeat center center/cover;
+  height: 100vh;
+}
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <a class="logo" href="#"><span class="g">Nature</span><span class="w">Ship</span>🌿</a>
+    <button class="logout-btn" onclick="logout()">Logout</button>
+  </nav>
+  <div class="profile-container">
+    <img class="avatar" src="https://ui-avatars.com/api/?name=User&background=3be477&color=121d18" id="profilePic">
+    <h1 id="dispName">User</h1>
+    <p id="dispEmail">email@example.com</p>
+    <hr style="border: 0.5px solid var(--border); margin: 20px 0;">
+    <p>Status: 🟢 Active Member of NatureShip</p>
+  
+  </div>
+  <script>
+    const user = JSON.parse(localStorage.getItem("natureShipUser"));
+    if(!user) {
+      alert("Please login first!");
+      window.location.href = "projectloginpage.html";
+    } else {
+      document.getElementById("dispName").innerText = user.name;
+      document.getElementById("dispEmail").innerText = user.email;
+      document.getElementById("profilePic").src = "https://ui-avatars.com/api/?background=3be477&color=121d18&bold=true&name=" + user.name;
+    }
+    function logout() {
+      // We don't delete the user so you can log back in later
+      window.location.href = "project1.html";
+    }
+    
+  </script>
+</body>
+</html>

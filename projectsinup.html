@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NatureShip - Signup</title>
+  <style>
+    :root { --dark-bg: #121d18; --brand-green: #3be477; --white: #ffffff; --card: #1a2822; --border: #2d4138; }
+    body { font-family: sans-serif; background: var(--dark-bg); color: var(--white); margin: 0; display: flex; flex-direction: column; min-height: 100vh; }
+    .navbar { padding: 1rem 5%; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; }
+    .logo { font-size: 1.5rem; font-weight: bold; text-decoration: none; }
+    .logo .g { color: var(--brand-green); } .logo .w { color: var(--white); }
+    .auth-page { flex: 1; display: flex; justify-content: center; align-items: center; }
+    .card { background: var(--card); padding: 40px; border-radius: 15px; border: 1px solid var(--border); width: 100%; max-width: 350px; text-align: center; }
+    input { width: 100%; padding: 12px; margin: 10px 0; background: #0d1612; border: 1px solid var(--border); color: white; border-radius: 8px; box-sizing: border-box; }
+    .btn { width: 100%; padding: 12px; background: var(--brand-green); border: none; border-radius: 8px; font-weight: bold; cursor: pointer; }
+    .foot { margin-top: 15px; font-size: 0.9rem; color: #a0afaa; }
+    .foot a { color: var(--brand-green); text-decoration: none; }
+  </style>
+</head>
+<body>
+  <nav class="navbar"><a class="logo" href="#"><span class="g">Nature</span><span class="w">Ship</span>🌿</a></nav>
+  <main class="auth-page">
+    <div class="card">
+      <h1>Create Account</h1>
+      <form id="regForm">
+        <input type="text" id="name" placeholder="Full Name" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="password" id="pass" placeholder="Password" required>
+        <button type="submit" class="btn">Join the Crew</button>
+      </form>
+      <p class="foot">Already a member? <a href="projectloginpage.html">Login</a></p>
+    </div>
+  </main>
+  <script>
+    document.getElementById("regForm").onsubmit = function(e) {
+      e.preventDefault();
+      const user = { 
+        name: document.getElementById("name").value, 
+        email: document.getElementById("email").value, 
+        pass: document.getElementById("pass").value 
+      };
+      localStorage.setItem("natureShipUser", JSON.stringify(user));
+      alert("Signup successful! 🎉");
+      window.location.href = "projectloginpage.html";
+    };
+  </script>
+</body>
+</html>

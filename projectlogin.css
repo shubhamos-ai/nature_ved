@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #06110b, #0d1f15, #153727);
+  overflow: hidden;
+  position: relative;
+}
+
+.login-bg {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  opacity: 0.28;
+}
+
+.shape-a {
+  width: 260px;
+  height: 260px;
+  background: #39ff88;
+  top: 40px;
+  left: 30px;
+}
+
+.shape-b {
+  width: 300px;
+  height: 300px;
+  background: #00d4ff;
+  bottom: 40px;
+  right: 40px;
+}
+
+.login-container {
+  width: 100%;
+  max-width: 430px;
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.login-card {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.1);
+  backdrop-filter: blur(18px);
+  border-radius: 24px;
+  padding: 38px;
+  box-shadow: 0 18px 40px rgba(0,0,0,0.24);
+  color: white;
+}
+
+.login-card h2 {
+  color: #39ff88;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.login-card p {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #def5e6;
+}
+
+.login-card label {
+  display: block;
+  margin-bottom: 8px;
+  margin-top: 12px;
+  font-weight: 500;
+}
+
+.login-card input {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(255,255,255,0.08);
+  color: white;
+  outline: none;
+}
+
+.login-card input::placeholder {
+  color: #d7ebdd;
+}
+
+.login-card input:focus {
+  border-color: #39ff88;
+  box-shadow: 0 0 10px rgba(57,255,136,0.3);
+}
+
+.login-card button {
+  width: 100%;
+  margin-top: 18px;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #39ff88, #17d46b);
+  color: #082612;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.bottom-link {
+  margin-top: 16px;
+  font-size: 14px;
+}
+
+.bottom-link a {
+  color: #39ff88;
+  text-decoration: none;
+  font-weight: 600;
+}
